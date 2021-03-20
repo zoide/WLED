@@ -15,4 +15,5 @@
 node_modules
 .project
 .settings
+.cproject
 .idea
