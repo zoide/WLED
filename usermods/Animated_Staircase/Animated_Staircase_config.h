@@ -5,8 +5,8 @@
  */
 
 // Please change the pin numbering below to match your board.
-#define TOP_PIR_PIN D5
-#define BOTTOM_PIR_PIN D6
+#define TOP_PIR_PIN 5
+#define BOTTOM_PIR_PIN 6
 
 // Or uncumment and a pir and use an ultrasound HC-SR04 sensor,
 // see README.md for details

@@ -1,4 +1,5 @@
 #include "wled.h"
+#include "../usermods/Animated_Staircase/Animated_Staircase.h"
 /*
  * Register your v2 usermods here!
  *   (for v1 usermods using just usermod.cpp, you can ignore this file)
@@ -53,7 +54,8 @@ void registerUsermods()
    * \/ \/ \/
    */
   //usermods.add(new MyExampleUsermod());
-  
+  usermods.add(new Animated_Staircase());
+
   #ifdef USERMOD_DALLASTEMPERATURE
   usermods.add(new UsermodTemperature());
   #endif
