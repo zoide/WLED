@@ -46,6 +46,11 @@
 #include "../usermods/DHT/usermod_dht.h"
 #endif
 
+#ifdef USERMOD_VL53L0X_GESTURES
+#include <Wire.h> //it's needed here to correctly resolve dependencies
+#include "../usermods/VL53L0X_gestures/usermod_vl53l0x_gestures.h"
+#endif
+
 void registerUsermods()
 {
 /*
@@ -88,5 +93,9 @@ void registerUsermods()
 
 #ifdef USERMOD_DHT
 usermods.add(new UsermodDHT());
+#endif
+
+#ifdef USERMOD_VL53L0X_GESTURES
+  usermods.add(new UsermodVL53L0XGestures());
 #endif
 }
